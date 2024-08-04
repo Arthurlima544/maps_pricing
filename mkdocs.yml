@@ -33,10 +33,10 @@ theme:
 
 
 nav:
-  - Home: index.md
-  - Maps: 
-    - V1: pesquisa_mapas.md
-    
+  - Home: home.md
+  - Mapas: 
+    - Google Maps: google_maps/index.md
+    - Map Box: map_box/index.md
 
 
 
