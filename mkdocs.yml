@@ -37,6 +37,11 @@ nav:
   - Mapas: 
     - Google Maps: google_maps/index.md
     - Map Box: map_box/index.md
+    - Next Bilion Ai: nextbillion_ai/index.md
+    - Open Steet Map: open_street_map/index.md
+    - TomTom: tom_tom/index.md
+    - Open Route Service: open_route_service/index.md
+    - Here WeGo: here_we_go/index.md
 
 
 

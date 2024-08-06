@@ -1,10 +1,10 @@
-## Google Maps Api
+## **Google Maps Api**
 
-### Custos
+### **Custos**
 
 A plataforma do google maps permite o teste gratuito de até 90 dias, ou quando a conta acumular US$ 300 em cobrancas. Além disso, é depositado recorrentemente US$ 200 como crédito.
 
-### Funcionalidades adicionais
+### **Funcionalidades adicionais**  
 
 O Google Maps fornece uma série de funcionalidades adicionais que se adequam a contextos específicos, como por exemplo:
 
@@ -14,7 +14,7 @@ O Google Maps fornece uma série de funcionalidades adicionais que se adequam a 
 
 - Mostre uma imagem fixa de um mapa e, se quiser, adicione marcadores, polígonos, retângulos, polilinhas, círculos e estilos personalizados. Isso é útil, por exemplo, quando você não precisa de um mapa interativo e quer otimizar a performance e o tamanho. ( API Maps Static).
 
-### Desempenho
+### **Desempenho**
 
 O serviço possui um dashboard onde podemos verificar as solicitacoes em praticamente tempo real, onde podemos observar alguns ponto de interesse como:
 
@@ -28,48 +28,49 @@ O serviço possui um dashboard onde podemos verificar as solicitacoes em pratica
 
 - 95% de latência (ms): Representa que 95% das solicitações são atendidas em um tempo igual ou menor do que esse valor.
 
-![Painel Gcloud - Fonte: Google GCloud](painel_gcloud.png).
+![Painel Gcloud - Fonte: Google GCloud](assets/painel_gcloud.png).
 
-### Confiabilidade
+### **Confiabilidade**
 
 Nos termos de SLA, o Google garante que os serviços cobertos estarão disponíveis 99,9% do tempo a cada mês. Ele define isso como um Objetivo de Nível de Serviço (SLO) que pretende alcançar todos os meses.
 
 
 Além disso, fornece crédito caso o serviço fique indisponível por um período de tempo acima do definido no SLA. Para isso, é preciso realizar uma solicitação de crédito.
 
-https://cloud.google.com/maps-platform/terms/sla
+o Termo Pode ser visualizado através desse [**Link**](https://cloud.google.com/maps-platform/terms/sla)
 
-### Seguranca
+### **Seguranca**
 
 A Google utiliza o sistema de APIKEY para lidar com o consumo. Podemos limitar a chave para o consumo de aplicativos específicos, como para Android, utilizando a assinatura SHA-1. Além disso, há orientações detalhadas para esse uso.
 
-https://developers.google.com/maps/api-security-best-practices?hl=pt-br
+Podemos visualizar praticas de segurança através desse [**Link**](https://developers.google.com/maps/api-security-best-practices?hl=pt-br)
 
-### Documentacao e Suporte
+### **Documentacao e Suporte**
 
 O Google oferece uma ampla variedade de documentação clara e compreensível, juntamente com exemplos práticos. Além disso, proporciona suporte técnico aos seus clientes.
 
-### Feedbacks
+### **Feedbacks**
 
 Temos uma série de avaliações de empresas que utilizam os serviços do Maps, como 99 e inDriver.
 
-https://mapsplatform.google.com/resources/customer-stories/?filterBy=inputIndustrySeeAll
+Podemos visualizar as avaliações dos clientes através do [**Link**](https://mapsplatform.google.com/resources/customer-stories/?filterBy=inputIndustrySeeAll)
 
-## API Maps Static
+
+## **API Maps Static**
 
 A API Maps Static do Google permite criar mapas estáticos para serem utilizados como imagem.
 
-### Recursos 
+### **Recursos**
 
  - Podemos adicionar multiplos marcadores e personalizá-los.
  - Podemos definir caminhos e destacar rotas ou areas especificas.
  - Possui uma gama de elementos para estilizar o mapa, como adicionar e remover pontos de interesse, alterar cores, etc.
 
-### Portabilidade
+### **Portabilidade**
 
 Como estamos lidando com mapas estáticos, o consumo de uma API pode ser realizado por diversas fontes, independentemente do sistema operacional.
 
-### Integracao com flutter
+### **Integracao com flutter**
 
 Por ser basicamente uma imagem, existe uma enorme facilidade para configurar a requisição no Flutter. Como no exemplo abaixo, onde utilizamos um simples exemplo de consumo dessa API, definindo a localização no mapa, a quantidade de zoom desejada, o tamanho da imagem, o tipo de mapa e alguns marcadores.
 
@@ -104,14 +105,11 @@ void main() => runApp(const MaterialApp(home: StaticMapExample()));
 
 ```
 
-
-
-
-### Escalabilidade
+### **Escalabilidade**
 
 O Google Cloud, que hospeda a API do Google Maps, é projetado para escalar automaticamente conforme a demanda. Isso significa que ele pode aumentar a capacidade para lidar com picos de tráfego sem comprometer o desempenho.
 
-### Limite de uso
+### **Limite de uso**
 
 Máximo de consultas por minuto: 30.000 QPM.
 
@@ -119,7 +117,7 @@ Solicitações de até 25.000 por dia exigem uma chave de API.
 
 Solicitações acima de 25.000 por dia exigem uma chave de API e uma assinatura digital.
 
-### Vantagens e Desvantagens  
+### **Vantagens e Desvantagens**  
 
 - O tamanho da imagem é limitado a no máximo 640 x 640 pixels.
 - Por utilizar uma imagem, podemos facilmente armazenar essa imagem no dispositivo no Flutter, limitando as solicitações apenas quando for necessário atualizar.
@@ -127,7 +125,7 @@ Solicitações acima de 25.000 por dia exigem uma chave de API e uma assinatura 
 - Possui um sistema de pagamentos um pouco complexo; caso não fique de olho, você pode começar a pagar mais do que espera.
 - Não é interativo, ou seja, se o usuário clicar em cima do mapa, nada acontecerá.
 
-### Preço
+### **Custo (Maps Static)**
 
 O custo inicial é gratuito. O Google oferece um nível gratuito com um número específico de solicitações gratuitas por mês, juntamente com 200 dólares em crédito para a maioria das APIs do Google Maps Platform.
 
@@ -135,21 +133,22 @@ Após o período de custo inicial, a cada 1.000 solicitações mensais o custo �
 
 Quando passam de 100.000 solicitações mensais, o custo é de 1,60 dólares por 1.000 solicitações.
 
-![Faixa Preco Static Maps](faixa_preco_static_maps.png)
+![Faixa Preco Static Maps](assets/faixa_preco_static_maps.png)
 
-### Referencias extras
+### **Referências extras**
 
-https://developers.google.com/maps/documentation/maps-static/
+- [Maps Static](https://developers.google.com/maps/documentation/maps-static/)
 
-https://developers.google.com/maps/documentation/maps-static/start?hl=pt-br#Locations
+- [Locations](https://developers.google.com/maps/documentation/maps-static/start?hl=pt-br#Locations)
 
-https://stackoverflow.com/questions/39625587/how-do-i-securely-use-google-api-keys
+- [Securely Use Google Api Keys](https://stackoverflow.com/questions/39625587/how-do-i-securely-use-google-api-keys)
 
-## Google Maps Api - Maps SDK para Flutter
+
+## **Google Maps Api - Maps SDK para Flutter**
 
 Fornece suporte à base de dados de mapas diretamente para aplicativos iOS ou Android.
 
-### Recursos
+### **Recursos**
 
 Conta com uma ampla gama de recursos:
 
@@ -163,27 +162,28 @@ Conta com uma ampla gama de recursos:
 E entre outros (Basicamente o aplicativo Maps com recursos customizados).
 
 
-### Integracao com flutter
+### **Integracao com flutter**
 
 Por ser um plugin, inicialmente é preciso configurar o plugin para as plataformas, ou seja, são necessárias configurações adicionais com códigos nativos de cada plataforma para que esse recurso funcione.
 
 Embora essa integração seja mais complexa, ela abre uma gama de novas funcionalidades, como por exemplo: Adicionar um evento específico ao clicar em um marcador no mapa. No entanto, para isso será preciso adicionar configurações adicionais de cada plataforma e realizar a configuração necessária no Flutter.
 
-https://codelabs.developers.google.com/codelabs/google-maps-in-flutter?hl=pt-br#0
+Um exemplo de como utilizar o o maps sdk no flutter pode ser visualizado através do [**Link**](https://codelabs.developers.google.com/codelabs/google-maps-in-flutter?hl=pt-br#0)
 
 
-### Limite de uso
+### **Limite de uso**
 
 O uso é ilimitado, porém podemos definir limite de cotas para restringir as solicitações 
 
-### Vantagens e Desvantagens
+### **Vantagens e Desvantagens**
 
 - Maior Flexibilidade de Recursos e flexibilidade.
 - Mapas dinâmicos, permitindo que o usuário interaja de forma mais livre.
 - Sistema de pagamento um pouco estranho; recursos podem ser pagos se personalizarmos o mapa.
 - Possui um período gratuito de uso para testes.
 - Maior tempo de desenvolvimento por ser um plugin e não simplesmente uma requisição.
-### Preço
+
+### **Custo (Maps SDK)**
 
 O custo inicial é gratuito. O Google oferece um nível gratuito com um número específico de solicitações gratuitas por mês, com 200 dólares em crédito para a maioria das APIs do Google Maps Platform.
 
@@ -193,7 +193,7 @@ Quando passam de 100.000 solicitações mensais, ele passa a cobrar 5,60 dólare
 
 Para mapas que não foram carregados com ID do mapa, o custo é de 0 dólares, independentemente da quantidade de solicitações por mês.
 
-### ID do mapa
+### **ID do mapa**
 
 É um identificador que permite carregar mapas personalizados com estilos específicos, definido no Google Cloud Console.
 
